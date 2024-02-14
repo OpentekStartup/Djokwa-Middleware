@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const parentController = require('../controllers/parentController');
 
-router.post('/', parentController.createParent);
+router.post('/parent', parentController.createParent);
 
 // Define other parent routes as needed
 

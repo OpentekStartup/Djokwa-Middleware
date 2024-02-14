@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const teacherController = require('../controllers/teacherController');
 
-router.post('/', teacherController.createTeacher);
+router.post('/teacher', teacherController.createTeacher);
 
 // Define other teacher routes as needed
 

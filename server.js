@@ -2,8 +2,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const userRoutes = require('./src/routes/userRoutes');
-const postRoutes = require('./src/routes/postRoutes');
+const userRoutes = require('./src/routes/adminRoutes');
+const postRoutes = require('./src/routes/studentRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;

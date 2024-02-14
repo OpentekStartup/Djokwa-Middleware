@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const courseController = require('../controllers/courseController');
 
-router.post('/', courseController.createCourse);
+router.post('/course', courseController.createCourse);
 
 // Define other course routes as needed
 

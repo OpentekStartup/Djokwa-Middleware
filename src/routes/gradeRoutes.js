@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const gradeController = require('../controllers/gradeController');
 
-router.post('/', gradeController.createGrade);
+router.post('/grade', gradeController.createGrade);
 
 // Define other grade routes as needed
 
