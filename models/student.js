@@ -1,7 +1,7 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
+
 module.exports = (sequelize, DataTypes) => {
   class Student extends Model {
     /**
@@ -27,3 +27,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Student;
 };
+
+Student.belongsTo(Class, { foreignKey: 'homeroom_class_id' });
+
+module.exports = Student;

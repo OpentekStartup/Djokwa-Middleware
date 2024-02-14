@@ -1,7 +1,7 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
+
 module.exports = (sequelize, DataTypes) => {
   class Parent extends Model {
     /**
@@ -26,3 +26,5 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Parent;
 };
+
+module.exports = Parent;

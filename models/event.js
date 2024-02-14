@@ -1,7 +1,7 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
+
 module.exports = (sequelize, DataTypes) => {
   class Event extends Model {
     /**
@@ -25,3 +25,5 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Event;
 };
+
+module.exports = Event;
