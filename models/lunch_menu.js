@@ -25,4 +25,3 @@ module.exports = (sequelize, DataTypes) => {
   return Lunch_menu;
 };
 
-module.exports = Lunch_menu;

@@ -27,5 +27,3 @@ module.exports = (sequelize, DataTypes) => {
 
 
 Disciplinary_action.belongsTo(Student, { foreignKey: 'student_id' });
-
-module.exports = Disciplinary_action;

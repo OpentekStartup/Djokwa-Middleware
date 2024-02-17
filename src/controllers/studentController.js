@@ -1,5 +1,5 @@
 // src/controllers/studentController.js
-const Student = require('../models/Student');
+const Student = require('../models/student');
 
 exports.createStudent = async (req, res) => {
     try {

@@ -25,5 +25,3 @@ module.exports = (sequelize, DataTypes) => {
 };
 
 Class.belongsTo(Teacher, { foreignKey: 'teacher_id' });
-
-module.exports = Class;

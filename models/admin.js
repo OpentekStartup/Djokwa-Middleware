@@ -25,5 +25,3 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Admin;
 };
-
-module.exports = Admin;

@@ -29,5 +29,3 @@ module.exports = (sequelize, DataTypes) => {
 Grade.belongsTo(Student, { foreignKey: 'student_id' });
 Grade.belongsTo(Course, { foreignKey: 'course_id' });
 Grade.belongsTo(Teacher, { foreignKey: 'teacher_id' });
-
-module.exports = Grade;

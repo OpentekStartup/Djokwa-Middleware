@@ -27,4 +27,3 @@ module.exports = (sequelize, DataTypes) => {
   return Parent;
 };
 
-module.exports = Parent;
